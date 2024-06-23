@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Exercícios Lista em Python | Portifolio - André Do Valle Ciccozzi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Exercícios ListaIntroduçãoNesta atividade, foram abordados três exercícios, cada um resolvido de duas maneiras distintas: utilizando os métodos de Lagrange e Newton. Abaixo, estão apresentadas imagens">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Exercícios Lista em Python">
+<meta property="og:url" content="https://fernandoszkvarak.github.io/portifolioHexo/2024/06/21/Exercicios-Lista-Usando-Codigo/index.html">
+<meta property="og:site_name" content="Portifolio - André Do Valle Ciccozzi">
+<meta property="og:description" content="Exercícios ListaIntroduçãoNesta atividade, foram abordados três exercícios, cada um resolvido de duas maneiras distintas: utilizando os métodos de Lagrange e Newton. Abaixo, estão apresentadas imagens">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://fernandoszkvarak.github.io/portifolioHexo/img/rela.png">
+<meta property="og:image" content="https://fernandoszkvarak.github.io/portifolioHexo/img/renw.png">
+<meta property="article:published_time" content="2024-06-21T21:17:25.000Z">
+<meta property="article:modified_time" content="2024-06-23T00:58:00.901Z">
+<meta property="article:author" content="André Ciccozzi">
+<meta property="article:tag" content="interpolação, métodos numéricos, cálculo, matemática">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fernandoszkvarak.github.io/portifolioHexo/img/rela.png">
+  
+    <link rel="alternate" href="/portifolioHexo/atom.xml" title="Portifolio - André Do Valle Ciccozzi" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/portifolioHexo/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/portifolioHexo/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/portifolioHexo/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/portifolioHexo/" id="logo">Portifolio - André Do Valle Ciccozzi</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/portifolioHexo/" id="subtitle">Métodos numéricos para interpolação e ajuste de curvas</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/portifolioHexo/">Home</a>
+        
+          <a class="main-nav-link" href="/portifolioHexo/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/portifolioHexo/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://fernandoszkvarak.github.io/portifolioHexo"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Exercicios-Lista-Usando-Codigo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/portifolioHexo/2024/06/21/Exercicios-Lista-Usando-Codigo/" class="article-date">
+  <time class="dt-published" datetime="2024-06-21T21:17:25.000Z" itemprop="datePublished">2024-06-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Exercícios Lista em Python
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Exercicios-Lista"><a href="#Exercicios-Lista" class="headerlink" title="Exercícios Lista"></a>Exercícios Lista</h1><h2 id="Introducao"><a href="#Introducao" class="headerlink" title="Introdução"></a>Introdução</h2><p>Nesta atividade, foram abordados três exercícios, cada um resolvido de duas maneiras distintas: utilizando os métodos de Lagrange e Newton. Abaixo, estão apresentadas imagens que detalham o código e a solução para cada exercício.</p>
+<h2 id="Codigo-na-Forma-de-Lagrange"><a href="#Codigo-na-Forma-de-Lagrange" class="headerlink" title="Código na Forma de Lagrange"></a>Código na Forma de Lagrange</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">lagrange_basis</span>(<span class="params">x, x_points, j</span>):</span><br><span class="line">    l_j = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> m <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(x_points)):</span><br><span class="line">        <span class="keyword">if</span> m != j:</span><br><span class="line">            l_j *= (x - x_points[m]) / (x_points[j] - x_points[m])</span><br><span class="line">    <span class="keyword">return</span> l_j</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">lagrange_interpolator</span>(<span class="params">x, x_points, y_points</span>):</span><br><span class="line">    L_x = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(x_points)):</span><br><span class="line">        L_x += y_points[j] * lagrange_basis(x, x_points, j)</span><br><span class="line">    <span class="keyword">return</span> L_x</span><br><span class="line"></span><br><span class="line"><span class="comment"># Ex 1</span></span><br><span class="line">x1_points = [-<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line">y1_points = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">1</span>]</span><br><span class="line">x1_eval = <span class="number">1.5</span></span><br><span class="line">y1_interpolated = lagrange_interpolator(x1_eval, x1_points, y1_points)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Exercício 1: O valor interpolado de f(1.5) é: <span class="subst">&#123;y1_interpolated&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Ex 2</span></span><br><span class="line">tempo = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">13</span>]</span><br><span class="line">velocidade = [<span class="number">800</span>, <span class="number">1310</span>, <span class="number">2090</span>, <span class="number">2340</span>, <span class="number">3180</span>]</span><br><span class="line">tempo_eval = <span class="number">10</span></span><br><span class="line">velocidade_interpolada = lagrange_interpolator(tempo_eval, tempo, velocidade)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Exercício 2: A velocidade de queda do paraquedista ao fim de 10 segundos é: <span class="subst">&#123;velocidade_interpolada&#125;</span> cm/s&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Ex 3</span></span><br><span class="line">x3_points = [<span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">15</span>]</span><br><span class="line">y3_points = [<span class="number">2.397895</span>, <span class="number">2.484907</span>, <span class="number">2.564949</span>, <span class="number">2.639057</span>, <span class="number">2.708050</span>]</span><br><span class="line">x3_eval = <span class="number">12.3</span></span><br><span class="line">y3_interpolated = lagrange_interpolator(x3_eval, x3_points, y3_points)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Exercício 3: A aproximação para ln(12.3) é: <span class="subst">&#123;y3_interpolated&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_lagrange_details</span>(<span class="params">x_eval, x_points, y_points</span>):</span><br><span class="line">    L_x_calc = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(x_points)):</span><br><span class="line">        l_j = lagrange_basis(x_eval, x_points, j)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;l_<span class="subst">&#123;j&#125;</span>(<span class="subst">&#123;x_eval&#125;</span>) = <span class="subst">&#123;l_j&#125;</span>&quot;</span>)</span><br><span class="line">        L_x_calc += y_points[j] * l_j</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;Termo <span class="subst">&#123;j&#125;</span>: y_<span class="subst">&#123;j&#125;</span> * l_<span class="subst">&#123;j&#125;</span>(<span class="subst">&#123;x_eval&#125;</span>) = <span class="subst">&#123;y_points[j]&#125;</span> * <span class="subst">&#123;l_j&#125;</span> = <span class="subst">&#123;y_points[j] * l_j&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;Polinômio interpolador L(<span class="subst">&#123;x_eval&#125;</span>) = <span class="subst">&#123;L_x_calc&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nDetalhes dos cálculos para o Exemplo 1:&quot;</span>)</span><br><span class="line">show_lagrange_details(x1_eval, x1_points, y1_points)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nDetalhes dos cálculos para o Exemplo 2:&quot;</span>)</span><br><span class="line">show_lagrange_details(tempo_eval, tempo, velocidade)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nDetalhes dos cálculos para o Exemplo 3:&quot;</span>)</span><br><span class="line">show_lagrange_details(x3_eval, x3_points, y3_points)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Resultado-do-Codigo"><a href="#Resultado-do-Codigo" class="headerlink" title="Resultado do Código"></a>Resultado do Código</h3><p>Resultado obtido com o código de Lagrange.</p>
+<p><img src="/portifolioHexo/img/rela.png" alt="Resultado do Código que Resolve no método de Lagrange"></p>
+<h2 id="Codigo-na-Forma-de-Newton"><a href="#Codigo-na-Forma-de-Newton" class="headerlink" title="Código na Forma de Newton"></a>Código na Forma de Newton</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">divided_differences</span>(<span class="params">x_points, y_points</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(x_points)</span><br><span class="line">    F = [<span class="number">0</span>] * n</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        F[i] = y_points[i]</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n-<span class="number">1</span>, j-<span class="number">1</span>, -<span class="number">1</span>):</span><br><span class="line">            F[i] = (F[i] - F[i-<span class="number">1</span>]) / (x_points[i] - x_points[i-j])</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> F</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">newton_interpolator</span>(<span class="params">x_eval, x_points, y_points</span>):</span><br><span class="line">    F = divided_differences(x_points, y_points)</span><br><span class="line">    n = <span class="built_in">len</span>(x_points)</span><br><span class="line">    p = F[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n):</span><br><span class="line">        term = F[j]</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(j):</span><br><span class="line">            term *= (x_eval - x_points[i])</span><br><span class="line">        p += term</span><br><span class="line">    <span class="keyword">return</span> p</span><br><span class="line"></span><br><span class="line"><span class="comment"># Ex 1</span></span><br><span class="line">x1_points = [-<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line">y1_points = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">1</span>]</span><br><span class="line">x1_eval = <span class="number">1.5</span></span><br><span class="line">y1_interpolated = newton_interpolator(x1_eval, x1_points, y1_points)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Exemplo 1: O valor interpolado de f(1.5) é: <span class="subst">&#123;y1_interpolated&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Ex  2</span></span><br><span class="line">tempo = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">13</span>]</span><br><span class="line">velocidade = [<span class="number">800</span>, <span class="number">1310</span>, <span class="number">2090</span>, <span class="number">2340</span>, <span class="number">3180</span>]</span><br><span class="line">tempo_eval = <span class="number">10</span></span><br><span class="line">velocidade_interpolada = newton_interpolator(tempo_eval, tempo, velocidade)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Exemplo 2: A velocidade de queda do paraquedista ao fim de 10 segundos é: <span class="subst">&#123;velocidade_interpolada&#125;</span> cm/s&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Ex 3</span></span><br><span class="line">x3_points = [<span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">15</span>]</span><br><span class="line">y3_points = [<span class="number">2.397895</span>, <span class="number">2.484907</span>, <span class="number">2.564949</span>, <span class="number">2.639057</span>, <span class="number">2.708050</span>]</span><br><span class="line">x3_eval = <span class="number">12.3</span></span><br><span class="line">y3_interpolated = newton_interpolator(x3_eval, x3_points, y3_points)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Exemplo 3: A aproximação para ln(12.3) é: <span class="subst">&#123;y3_interpolated&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_newton_details</span>(<span class="params">x_eval, x_points, y_points</span>):</span><br><span class="line">    F = divided_differences(x_points, y_points)</span><br><span class="line">    n = <span class="built_in">len</span>(x_points)</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Tabela de diferenças divididas:&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;f[<span class="subst">&#123;i&#125;</span>,0] = <span class="subst">&#123;F[i]&#125;</span>&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    p_x = F[<span class="number">0</span>]</span><br><span class="line">    termos = [<span class="string">f&quot;f[0,0] = <span class="subst">&#123;F[<span class="number">0</span>]&#125;</span>&quot;</span>]</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n):</span><br><span class="line">        termo = <span class="string">&quot;&quot;</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i):</span><br><span class="line">            termo += <span class="string">f&quot;(x - <span class="subst">&#123;x_points[j]&#125;</span>)&quot;</span></span><br><span class="line">        termo = <span class="string">f&quot;f[<span class="subst">&#123;i&#125;</span>,<span class="subst">&#123;i&#125;</span>] * <span class="subst">&#123;termo&#125;</span>&quot;</span></span><br><span class="line">        termos.append(termo)</span><br><span class="line">        p_x += F[i] * (x_eval - x_points[i-<span class="number">1</span>])</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\nPolinômio interpolador de Newton:&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;P(x) =&quot;</span>, <span class="string">&quot; + &quot;</span>.join(termos))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;P(<span class="subst">&#123;x_eval&#125;</span>) = <span class="subst">&#123;p_x&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nDetalhes dos cálculos para o Exemplo 1:&quot;</span>)</span><br><span class="line">show_newton_details(x1_eval, x1_points, y1_points)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nDetalhes dos cálculos para o Exemplo 2:&quot;</span>)</span><br><span class="line">show_newton_details(tempo_eval, tempo, velocidade)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\nDetalhes dos cálculos para o Exemplo 3:&quot;</span>)</span><br><span class="line">show_newton_details(x3_eval, x3_points, y3_points)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Resultado-do-Codigo-1"><a href="#Resultado-do-Codigo-1" class="headerlink" title="Resultado do Código"></a>Resultado do Código</h3><p>Resultado obtido com o código de Newton.</p>
+<p><img src="/portifolioHexo/img/renw.png" alt="Resultado do Código que Resolve no método de Newton"></p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Por meio desses métodos, conseguimos resolver os exercícios de maneira eficiente e precisa, utilizando tanto a interpolação de Lagrange quanto a de Newton. Essas técnicas não apenas nos permitiram encontrar polinômios que passam pelos pontos dados, mas também entender melhor a relação entre os dados discretos e as funções contínuas que representam.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fernandoszkvarak.github.io/portifolioHexo/2024/06/21/Exercicios-Lista-Usando-Codigo/" data-id="clxqqwrxf0001mczp2e9l06nd" data-title="Exercícios Lista em Python" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/portifolioHexo/2024/06/21/Atv-Folha/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Cálculo  Folha de Árvore
+        
+      </div>
+    </a>
+  
+  
+    <a href="/portifolioHexo/2024/06/21/Codigo-newton/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Interpolação de Newton</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/portifolioHexo/tags/Math/" rel="tag">Math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portifolioHexo/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portifolioHexo/tags/programacao/" rel="tag">programação</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/portifolioHexo/tags/Math/" style="font-size: 10px;">Math</a> <a href="/portifolioHexo/tags/Python/" style="font-size: 10px;">Python</a> <a href="/portifolioHexo/tags/programacao/" style="font-size: 10px;">programação</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/portifolioHexo/archives/2024/06/">June 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/portifolioHexo/2024/06/21/Atv-Folha/">Cálculo  Folha de Árvore</a>
+          </li>
+        
+          <li>
+            <a href="/portifolioHexo/2024/06/21/Exercicios-Lista-Usando-Codigo/">Exercícios Lista em Python</a>
+          </li>
+        
+          <li>
+            <a href="/portifolioHexo/2024/06/21/Codigo-newton/">Interpolação de Newton</a>
+          </li>
+        
+          <li>
+            <a href="/portifolioHexo/2024/06/21/Codigo-lagrange/">Interpolação de Lagrange</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 André Ciccozzi<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/portifolioHexo/" class="mobile-nav-link">Home</a>
+  
+    <a href="/portifolioHexo/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/portifolioHexo/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/portifolioHexo/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/portifolioHexo/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

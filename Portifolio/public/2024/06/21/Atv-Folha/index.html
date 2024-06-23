@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Cálculo  Folha de Árvore | Portifolio - André Do Valle Ciccozzi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Medição e Avaliação do Erro Utilizando uma Folha de ÁrvorePara esta atividade, coletamos uma folha de árvore, identificamos cinco pontos específicos e empregamos métodos numéricos para avaliar a preci">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cálculo  Folha de Árvore">
+<meta property="og:url" content="https://fernandoszkvarak.github.io/portifolioHexo/2024/06/21/Atv-Folha/index.html">
+<meta property="og:site_name" content="Portifolio - André Do Valle Ciccozzi">
+<meta property="og:description" content="Medição e Avaliação do Erro Utilizando uma Folha de ÁrvorePara esta atividade, coletamos uma folha de árvore, identificamos cinco pontos específicos e empregamos métodos numéricos para avaliar a preci">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://fernandoszkvarak.github.io/portifolioHexo/img/folha.png">
+<meta property="og:image" content="https://fernandoszkvarak.github.io/portifolioHexo/img/Refolha.png">
+<meta property="article:published_time" content="2024-06-21T22:00:00.000Z">
+<meta property="article:modified_time" content="2024-06-23T01:21:18.397Z">
+<meta property="article:author" content="André Ciccozzi">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="programação">
+<meta property="article:tag" content="Math">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://fernandoszkvarak.github.io/portifolioHexo/img/folha.png">
+  
+    <link rel="alternate" href="/portifolioHexo/atom.xml" title="Portifolio - André Do Valle Ciccozzi" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/portifolioHexo/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/portifolioHexo/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/portifolioHexo/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/portifolioHexo/" id="logo">Portifolio - André Do Valle Ciccozzi</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/portifolioHexo/" id="subtitle">Métodos numéricos para interpolação e ajuste de curvas</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/portifolioHexo/">Home</a>
+        
+          <a class="main-nav-link" href="/portifolioHexo/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/portifolioHexo/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://fernandoszkvarak.github.io/portifolioHexo"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Atv-Folha" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/portifolioHexo/2024/06/21/Atv-Folha/" class="article-date">
+  <time class="dt-published" datetime="2024-06-21T22:00:00.000Z" itemprop="datePublished">2024-06-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Cálculo  Folha de Árvore
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Medicao-e-Avaliacao-do-Erro-Utilizando-uma-Folha-de-Arvore"><a href="#Medicao-e-Avaliacao-do-Erro-Utilizando-uma-Folha-de-Arvore" class="headerlink" title="Medição e Avaliação do Erro Utilizando uma Folha de Árvore"></a>Medição e Avaliação do Erro Utilizando uma Folha de Árvore</h1><p>Para esta atividade, coletamos uma folha de árvore, identificamos cinco pontos específicos e empregamos métodos numéricos para avaliar a precisão das medições realizadas. </p>
+<h2 id="Medicoes-e-Calculos"><a href="#Medicoes-e-Calculos" class="headerlink" title="Medições e Cálculos"></a>Medições e Cálculos</h2><h3 id="Imagem-da-Folha-com-as-Medicoes"><a href="#Imagem-da-Folha-com-as-Medicoes" class="headerlink" title="Imagem da Folha com as Medições"></a>Imagem da Folha com as Medições</h3><p><img src="/portifolioHexo/img/folha.png"></p>
+<h3 id="Codigo-Utilizado"><a href="#Codigo-Utilizado" class="headerlink" title="Código Utilizado"></a>Código Utilizado</h3><p>O código abaixo foi utilizado para calcular utilizando o método de Newton com os pontos medidos na folha:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Código de Interpolação Polinomial usando Newton </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calcular_diferencas_divididas</span>(<span class="params">x, y</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(x)</span><br><span class="line">    F = [[<span class="number">0</span>] * n <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        F[i][<span class="number">0</span>] = y[i]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n - j):</span><br><span class="line">            F[i][j] = (F[i+<span class="number">1</span>][j-<span class="number">1</span>] - F[i][j-<span class="number">1</span>]) / (x[i+j] - x[i])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> [F[i][i] <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n)]</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calcular_polinomio_interpolador</span>(<span class="params">x, y</span>):</span><br><span class="line">    dif_div = calcular_diferencas_divididas(x, y)</span><br><span class="line">    n = <span class="built_in">len</span>(x)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">polinomio_interp</span>(<span class="params">xi</span>):</span><br><span class="line">        resultado = dif_div[<span class="number">0</span>]</span><br><span class="line">        termo = <span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, n):</span><br><span class="line">            termo *= (xi - x[i-<span class="number">1</span>])</span><br><span class="line">            resultado += dif_div[i] * termo</span><br><span class="line">        <span class="keyword">return</span> resultado</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> polinomio_interp</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">y = [<span class="number">2</span>, <span class="number">3.5</span>, <span class="number">5</span>, <span class="number">2</span>, <span class="number">1.6</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">polinomio_interp = calcular_polinomio_interpolador(x, y)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ponto_teste = <span class="number">3.5</span></span><br><span class="line">resultado = polinomio_interp(ponto_teste)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;Para x = <span class="subst">&#123;ponto_teste&#125;</span>, o valor interpolado é <span class="subst">&#123;resultado&#125;</span>&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Resultado-no-codigo"><a href="#Resultado-no-codigo" class="headerlink" title="Resultado no codigo"></a>Resultado no codigo</h3><p><img src="/portifolioHexo/img/Refolha.png" alt="Para ver o resultado click na imagem"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fernandoszkvarak.github.io/portifolioHexo/2024/06/21/Atv-Folha/" data-id="clxqqwrxb0000mczpbdxxbt95" data-title="Cálculo  Folha de Árvore" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/portifolioHexo/tags/Math/" rel="tag">Math</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/portifolioHexo/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/portifolioHexo/tags/programacao/" rel="tag">programação</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/portifolioHexo/2024/06/21/Exercicios-Lista-Usando-Codigo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Exercícios Lista em Python</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/portifolioHexo/tags/Math/" rel="tag">Math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portifolioHexo/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/portifolioHexo/tags/programacao/" rel="tag">programação</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/portifolioHexo/tags/Math/" style="font-size: 10px;">Math</a> <a href="/portifolioHexo/tags/Python/" style="font-size: 10px;">Python</a> <a href="/portifolioHexo/tags/programacao/" style="font-size: 10px;">programação</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/portifolioHexo/archives/2024/06/">June 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/portifolioHexo/2024/06/21/Atv-Folha/">Cálculo  Folha de Árvore</a>
+          </li>
+        
+          <li>
+            <a href="/portifolioHexo/2024/06/21/Exercicios-Lista-Usando-Codigo/">Exercícios Lista em Python</a>
+          </li>
+        
+          <li>
+            <a href="/portifolioHexo/2024/06/21/Codigo-newton/">Interpolação de Newton</a>
+          </li>
+        
+          <li>
+            <a href="/portifolioHexo/2024/06/21/Codigo-lagrange/">Interpolação de Lagrange</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 André Ciccozzi<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/portifolioHexo/" class="mobile-nav-link">Home</a>
+  
+    <a href="/portifolioHexo/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/portifolioHexo/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/portifolioHexo/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/portifolioHexo/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
